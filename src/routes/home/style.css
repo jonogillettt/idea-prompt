@@ -4,24 +4,25 @@ button {
 
 .home {
   padding: 56px 20px;
-  width: 100%;
+	width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .generated {
   font-weight: 500;
   font-size: 26px;
-  margin: 64px;
-}
-
-.filled {
-  color: #501b74;
-  border: 1px solid #501b74;
-  background: none;
-  font-size: inherit;
-  padding: 8px;
-  border-radius: 4px;
-  position: relative;
-  user-select: none;
+	margin: 64px 0;
 }
 
 .generateButton {
@@ -90,12 +91,27 @@ button {
 .closeButton:hover {
   background: rgba(0, 0, 0, 0.15);
 }
+
+.extraInfo {
+	text-align: left;
+}
+
+.history {
+	margin-top: 32px;
+}
+
+.right {
+	margin-left: auto;
+	text-align: right;
+}
+
 @media screen and (max-width: 500px) {
   .generated {
     line-height: 54px;
-    margin: 64px 0;
   }
   .home {
+		width: 100%;
+		margin: 0;
     padding: 32px;
   }
   .generateButton,

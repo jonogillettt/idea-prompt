@@ -1,0 +1,10 @@
+.filled {
+  color: #501b74;
+  border: 1px solid #501b74;
+  background: none;
+  font-size: inherit;
+  padding: 8px;
+  border-radius: 4px;
+  position: relative;
+  user-select: none;
+}
