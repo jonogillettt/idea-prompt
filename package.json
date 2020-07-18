@@ -8,7 +8,10 @@
     "serve": "sirv build --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "deploy:base": "aws s3 --profile personal sync ./build/ s3://idea-prompt --acl public-read",
+    "website": "aws s3 --profile personal website s3://idea-prompt --index-document index.html",
+    "deploy": "yarn deploy:base && yarn website"
   },
   "eslintConfig": {
     "extends": "preact",
