@@ -32,7 +32,7 @@
     "sirv-cli": "^0.4.5"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "english-verbs-gerunds": "^0.8.4",
     "english-verbs-helper": "^0.8.4",
     "english-verbs-irregular": "^0.8.4",
